@@ -1,12 +1,8 @@
-const path = require('path');
-
-module.exports = () => ({
+module.exports = ({ options, env }) => ({
+  parser: 'sugarss',
   plugins: {
-    autoprefixer: {
-      browsers: ['> 1%'],
-    },
-    'postcss-import': {
-      path: [path.resolve(__dirname, 'src')],
-    },
+    'postcss-import': env === 'production' ? options['postcss-import'] : false,
+    'postcss-preset-env': env === 'production' ? options['postcss-preset-env'] : false,
+    'cssnano': env === 'production' ? options['cssnano'] : false,
   },
 });
