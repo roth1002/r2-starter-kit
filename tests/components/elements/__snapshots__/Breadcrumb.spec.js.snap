@@ -6,20 +6,17 @@ exports[`<Breadcrumb /> should render component with props 1`] = `
 >
   <div
     className="section"
+    key="breadcrumb0"
   >
     <a
       onClick={[MockFunction]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
-      }
     >
-      Post List
+      Home
     </a>
   </div>
   <div
     className="section active"
+    key="breadcrumb1"
   >
     <i
       className="right angle icon divider"
@@ -32,27 +29,5 @@ exports[`<Breadcrumb /> should render component with props 1`] = `
 exports[`<Breadcrumb /> should render initial component 1`] = `
 <div
   className="ts breadcrumb"
->
-  <div
-    className="section"
-  >
-    <a
-      onClick={[MockFunction]}
-      style={
-        Object {
-          "cursor": "pointer",
-        }
-      }
-    >
-      Post List
-    </a>
-  </div>
-  <div
-    className="section active"
-  >
-    <i
-      className="right angle icon divider"
-    />
-  </div>
-</div>
+/>
 `;

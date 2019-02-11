@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProgressiveImage /> should render initial component 1`] = `
-<FadeOutImage
+<ProgressiveImage
   placeholder="https://placehold.it/40x30"
   url="https://placehold.it/800x600"
 >
@@ -24,5 +24,32 @@ exports[`<ProgressiveImage /> should render initial component 1`] = `
       }
     />
   </div>
-</FadeOutImage>
+</ProgressiveImage>
+`;
+
+exports[`<ProgressiveImage /> should replace fuzzy tiny image with sharp large one after image onload 1`] = `
+<ProgressiveImage
+  placeholder="https://placehold.it/40x30"
+  url="https://placehold.it/800x600"
+>
+  <div>
+    <img
+      className="placeholder sharp"
+      style={
+        Object {
+          "backgroundImage": "url('https://placehold.it/800x600')",
+        }
+      }
+    />
+    <img
+      onLoad={[Function]}
+      src="https://placehold.it/800x600"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    />
+  </div>
+</ProgressiveImage>
 `;

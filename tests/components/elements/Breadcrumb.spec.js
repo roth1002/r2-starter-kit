@@ -4,8 +4,16 @@ import Component from 'components/elements/Breadcrumb';
 
 describe('<Breadcrumb />', () => {
   const initProps = {
-    title: '',
-    handleClick: jest.fn(),
+    data: [],
+    activeId: null,
+  };
+
+  const props = {
+    data: [
+      { id: -1, text: 'Home', handleClick: jest.fn() },
+      { id: 1, text: 'title', handleClick: () => {} },
+    ],
+    activeId: 1,
   };
 
   let wrapper;
@@ -18,13 +26,13 @@ describe('<Breadcrumb />', () => {
   });
 
   it('should render component with props', () => {
-    wrapper.setProps({ title: 'title' });
+    wrapper.setProps(props);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should call handleClick when click root path', () => {
-    expect(initProps.handleClick).toHaveBeenCalledTimes(0);
+    expect(props.data[0].handleClick).toHaveBeenCalledTimes(0);
     wrapper.find('a').simulate('click');
-    expect(initProps.handleClick).toHaveBeenCalledTimes(1);
+    expect(props.data[0].handleClick).toHaveBeenCalledTimes(1);
   });
 });
