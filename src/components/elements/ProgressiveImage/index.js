@@ -1,50 +1,44 @@
-import React, { PureComponent } from 'react';
+import React, { memo, useState } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import styles from './styles.scss';
 
-export default class FadeOutImage extends PureComponent {
-  static propTypes = {
-    url: PropTypes.string.isRequired,
-    placeholder: PropTypes.string.isRequired,
-  };
-  static defaultProps = {
-    url: '',
-    placeholder: '',
-  };
-  handleImageOnload = () => {
-    const { url } = this.props;
-    this.setState({
-      currentUrl: url,
-      isSharp: true,
-    });
-  }
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentUrl: props.placeholder,
-      isSharp: false,
-    };
-  }
-  render() {
-    const { currentUrl, isSharp } = this.state;
-    const { url } = this.props;
-    return (
-      <div>
-        <img
-          ref={(c) => (this.component = c)}
-          style={{ backgroundImage: `url('${currentUrl}')` }}
-          className={cx(styles['placeholder'], {
-            [styles['sharp']]: isSharp,
-          })}
-        />
-        <img
-          src={url}
-          onLoad={() => this.handleImageOnload()}
-          style={{ display: 'none' }}
-        />
-      </div>
-    );
-  }
+function ProgressiveImage ({
+  url,
+  placeholder,
+}) {
+  const [currentUrl, setCurrentUrl] = useState(placeholder);
+  const [isSharp, setIsSharp] = useState(false);
+
+  return (
+    <div>
+      <img
+        className={cx(styles['placeholder'], {
+          [styles['sharp']]: isSharp,
+        })}
+        style={{ backgroundImage: `url('${currentUrl}')` }}
+      />
+      <img
+        src={url}
+        onLoad={() => {
+          setCurrentUrl(url);
+          setIsSharp(true);
+        }}
+        style={{ display: 'none' }}
+      />
+    </div>
+  );
 }
+
+ProgressiveImage.propTypes = {
+  url:         PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+};
+
+ProgressiveImage.defaultProps = {
+  url:         '',
+  placeholder: '',
+};
+
+export default memo(ProgressiveImage);

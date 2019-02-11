@@ -1,28 +1,30 @@
-import React, { PureComponent } from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import Breadcrumb from 'components/elements/Breadcrumb';
 import Content from 'components/elements/Content';
 
-class Item extends PureComponent {
-  static propTypes = {
-    breadcrumb: PropTypes.object,
-    content: PropTypes.object,
-  }
-  static defaultProps = {
-    breadcrumb: {},
-    content: {},
-  }
-  render() {
-    const { breadcrumb, content } = this.props;
-    return (
-      <div className="ts text container">
-        <Breadcrumb {...breadcrumb} />
-        <div className="ts divider" />
-        <Content {...content} />
-      </div>
-    );
-  }
+function Item ({
+  breadcrumb,
+  content,
+}) {
+  return (
+    <div className="ts text container">
+      <Breadcrumb {...breadcrumb} />
+      <div className="ts divider" />
+      <Content {...content} />
+    </div>
+  );
 }
 
-export default Item;
+Item.propTypes = {
+  breadcrumb: PropTypes.object,
+  content:    PropTypes.object,
+};
+
+Item.defaultProps = {
+  breadcrumb: {},
+  content:    {},
+};
+
+export default memo(Item);

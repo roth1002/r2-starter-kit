@@ -1,26 +1,29 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { memo, Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import Loading from 'components/elements/Loading';
 
-class Post extends PureComponent {
-  static propTypes = {
-    uiState: PropTypes.oneOf(['loading', 'idle', 'failure']),
-    Item: PropTypes.element,
-  };
-  static defaultProps = {
-    uiState: 'idle',
-    Item: null,
-  }
-  render() {
-    const { uiState, Item } = this.props;
-    return (
-      <Fragment>
-        {uiState === 'loading' && <Loading />}
-        {uiState === 'idle' && Item}
-      </Fragment>
-    );
-  }
+function Post ({
+  uiState,
+  Item,
+}) {
+  return (
+    <Fragment>
+      {uiState === 'loading' && <Loading />}
+      {uiState === 'idle' && Item}
+      {uiState === 'failure' && 'Something went wrong.'}
+    </Fragment>
+  );
 }
 
-export default Post;
+Post.propTypes = {
+  uiState: PropTypes.oneOf(['loading', 'idle', 'failure']),
+  Item:    PropTypes.element,
+};
+
+Post.defaultProps = {
+  uiState: 'idle',
+  Item:    null,
+};
+
+export default memo(Post);
