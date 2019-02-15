@@ -22,7 +22,8 @@ module.exports = {
         "[conventional-private-methods]"
       ],
       "accessorPairPositioning": "getThenSet",
-    }]
+    }],
+    "react-hooks/rules-of-hooks": "error"
   },
   "settings": {
     "import/resolver": {
@@ -35,7 +36,7 @@ module.exports = {
     }
   },
   "parser": "babel-eslint",
-  "plugins": ["react", "jest", "sort-class-members"],
+  "plugins": ["react", "jest", "sort-class-members", "react-hooks"],
   "env": {
     "browser": true,
     "node": true,
