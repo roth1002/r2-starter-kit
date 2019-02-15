@@ -5,7 +5,5 @@ workflow "Build and Test Time" {
 
 action "Test on Travis CI" {
   uses = "travis-ci/actions@master"
-  secrets = [
-    "TRAVIS_TOKEN",
-  ]
+  secrets = ["TRAVIS_TOKEN"]
 }
