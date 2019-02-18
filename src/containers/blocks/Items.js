@@ -16,7 +16,7 @@ function mergeProps(state, { dispatch }, ownProps) {
     ...ownProps,
 
     // custom props
-    posts: state.response.posts.data,
+    posts:       state.response.posts.data,
     handleClick: (id) => dispatch(clickPost(id)),
   };
 }

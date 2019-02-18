@@ -34,7 +34,7 @@ function Breadcrumb ({
 }
 
 Breadcrumb.propTypes = {
-  data:     PropTypes.arrayOf(PropTypes.shape({
+  data: PropTypes.arrayOf(PropTypes.shape({
     id:          PropTypes.number,
     text:        PropTypes.string,
     handleClick: PropTypes.func,

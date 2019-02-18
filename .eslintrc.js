@@ -10,6 +10,9 @@ module.exports = {
   ],
   "rules": {
     "indent": ["error", 2],
+    "key-spacing": ["error", {
+      align: "value"
+    }],
     "no-console": "off",
     "sort-class-members/sort-class-members": [2, {
       "order": [

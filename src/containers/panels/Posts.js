@@ -24,7 +24,7 @@ function mergeProps(state, { dispatch }, ownProps) {
 
     // custom props
     uiState: state.ui.state.data,
-    Items: <Items />,
+    Items:   <Items />,
   };
 }
 
