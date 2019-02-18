@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
@@ -47,4 +47,4 @@ Breadcrumb.defaultProps = {
   activeId: null,
 };
 
-export default memo(Breadcrumb);
+export default Breadcrumb;

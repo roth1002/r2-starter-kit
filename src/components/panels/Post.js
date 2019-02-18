@@ -1,4 +1,4 @@
-import React, { memo, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import Loading from 'components/elements/Loading';
@@ -26,4 +26,4 @@ Post.defaultProps = {
   Item:    null,
 };
 
-export default memo(Post);
+export default Post;

@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProgressiveImage from 'components/elements/ProgressiveImage';
@@ -51,4 +51,4 @@ Items.defaultProps = {
   handleClick: () => {},
 };
 
-export default memo(Items);
+export default Items;

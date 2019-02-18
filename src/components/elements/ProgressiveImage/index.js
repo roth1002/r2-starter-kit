@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
@@ -41,4 +41,4 @@ ProgressiveImage.defaultProps = {
   placeholder: '',
 };
 
-export default memo(ProgressiveImage);
+export default ProgressiveImage;

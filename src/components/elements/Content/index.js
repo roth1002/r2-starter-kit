@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProgressiveImage from 'components/elements/ProgressiveImage';
@@ -50,4 +50,4 @@ Content.defaultProps = {
   placeholder: '',
 };
 
-export default memo(Content);
+export default Content;

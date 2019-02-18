@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import Breadcrumb from 'components/elements/Breadcrumb';
@@ -27,4 +27,4 @@ Item.defaultProps = {
   content:    {},
 };
 
-export default memo(Item);
+export default Item;
