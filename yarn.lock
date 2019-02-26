@@ -758,49 +758,49 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@redux-saga/core@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@redux-saga/core/-/core-1.0.0.tgz#bbcbbc7f48eaaf13ccc42e005b6e33513ca3eac1"
-  integrity sha512-QTMgdRMhTxqxxdu0g523tBgV3HcZSxxZl8goKEx8mEGeJe+FoCu/iJixRYP+KLCHtsE3MTNsErJScgX4kCiDyQ==
+"@redux-saga/core@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@redux-saga/core/-/core-1.0.2.tgz#4336a5bb4253e5ca69681c25a863fbbc03ea6d88"
+  integrity sha512-AsJYcpuYfM1cmxJvfhXs9HAFSZVEG17TMsLPlXH7+Hq5a5ZP4GqcbtijEmS2AC7NR5lLJHy8csxpqz22PeW5dw==
   dependencies:
     "@babel/runtime" "^7.0.0"
-    "@redux-saga/deferred" "^1.0.0"
-    "@redux-saga/delay-p" "^1.0.0"
-    "@redux-saga/is" "^1.0.0"
-    "@redux-saga/symbols" "^1.0.0"
-    "@redux-saga/types" "^1.0.0"
+    "@redux-saga/deferred" "^1.0.1"
+    "@redux-saga/delay-p" "^1.0.1"
+    "@redux-saga/is" "^1.0.2"
+    "@redux-saga/symbols" "^1.0.1"
+    "@redux-saga/types" "^1.0.2"
     redux ">=0.10 <5"
     typescript-tuple "^2.1.0"
 
-"@redux-saga/deferred@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@redux-saga/deferred/-/deferred-1.0.0.tgz#faab86924114d411cc37be5c13dad7d9fe6ebced"
-  integrity sha512-3MsdWnBEwzqZQ76TXd44TZ+nPdvm6kIB4/1tAI/CSljs0fIxSK/dsCFE+S/YifUx5Alsp/hmDixLDAsatiJI5Q==
+"@redux-saga/deferred@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@redux-saga/deferred/-/deferred-1.0.1.tgz#c895445e486bded90acf0b873b4e978fbfe458c2"
+  integrity sha512-+gW5xQ93QXOOmRLAmX8x2Hx1HpbTG6CM6+HcdTSbJovh4uMWaGyeDECnqXSt8QqA/ja3s2nqYXLqXFKepIQ1hw==
 
-"@redux-saga/delay-p@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@redux-saga/delay-p/-/delay-p-1.0.0.tgz#eefe4213080d517cc2a5429146ba3f44ece3de26"
-  integrity sha512-A/O+Olwi/qsLKqorb1AUxjlLsExjt3YM+e742d6p1blA0/fcyDpLhnejpSbcnka85dwzudQ6zV6krRq1WBswWQ==
+"@redux-saga/delay-p@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@redux-saga/delay-p/-/delay-p-1.0.1.tgz#d69fc6103c7509ae80faa144ea17bbc69e51e029"
+  integrity sha512-0SnNDyDLUyB4NThtptAwiprNOnbCNhoed/Rp5JwS7SB+a/AdWynVgg/E6BmjsggLFNr07KW0bzn05tsPRBuU7Q==
   dependencies:
-    "@redux-saga/symbols" "^1.0.0"
+    "@redux-saga/symbols" "^1.0.1"
 
-"@redux-saga/is@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@redux-saga/is/-/is-1.0.0.tgz#b9059508e7704d0469a10913c6816cac70f7278f"
-  integrity sha512-UEjdbvoJ10W8Es+8OZfzoeu0BedbjTnEkvcbqqOfMPbbRNXMe83S0cVS4Rz5ne8VagzlAY38r1cPe4h12EQDjA==
+"@redux-saga/is@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@redux-saga/is/-/is-1.0.2.tgz#7f4be014c97061898d7efb11d6c9de31e943ed38"
+  integrity sha512-WnaUOwYvPK2waWjzebT4uhL8zY76XNkzzpJ2EQJe8bN1tByvAjvT7MuJZTSshOhdHL5PsRO0MsH224XIXBJidQ==
   dependencies:
-    "@redux-saga/symbols" "^1.0.0"
-    "@redux-saga/types" "^1.0.0"
+    "@redux-saga/symbols" "^1.0.1"
+    "@redux-saga/types" "^1.0.2"
 
-"@redux-saga/symbols@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@redux-saga/symbols/-/symbols-1.0.0.tgz#264748aff73feb5ea2627b2a1c5ef15f6a0fac5e"
-  integrity sha512-FXFonwg/UIXm1KDViIqDlE7Ywu/ai6XoC6rwyYI20kwMmqQZ2JPkchYiMt5IS0OaXvyroBZ5Ar4pu4mc3Y7/iw==
+"@redux-saga/symbols@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@redux-saga/symbols/-/symbols-1.0.1.tgz#46512ae1275f88df061c42168d0f600ddb170c1e"
+  integrity sha512-akKkzcVnb1RzJaZV2LQFbi51abvdICMuAKwwLoCjjxLbLAGIw9EJxk5ucNnWSSCEsoEQMeol5tkAcK+Xzuv1Bg==
 
-"@redux-saga/types@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.0.0.tgz#9342b7eb52ed3c903e122841407d4984b7338339"
-  integrity sha512-9I7ejD0kASU3H8gD6Wv8Y3F9VabNdvjE8apkGfSphCAjt46snJKjt79CnHdxo1xkTE0qMEZzmYmZ8hnIYDydhw==
+"@redux-saga/types@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.0.2.tgz#1d94f02800b094753f9271c206a26c2a06ca14ee"
+  integrity sha512-8/qcMh15507AnXJ3lBeuhsdFwnWQqnp68EpUuHlYPixJ5vjVmls7/Jq48cnUlrZI8Jd9U1jkhfCl0gaT5KMgVw==
 
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
@@ -9717,12 +9717,12 @@ redux-logger@^3.0.0:
   dependencies:
     deep-diff "^0.3.5"
 
-redux-saga@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-1.0.0.tgz#acb8b3ed9180fecbe75f342011d75af3ac11045b"
-  integrity sha512-GvJWs/SzMvEQgeaw6sRMXnS2FghlvEGsHiEtTLpJqc/FHF3I5EE/B+Hq5lyHZ8LSoT2r/X/46uWvkdCnK9WgHA==
+redux-saga@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-1.0.2.tgz#0599703f975438f1b2f9d2b9a965ec58f0fdfcd7"
+  integrity sha512-dHV256by3eF2AnBPx1l3HqazQFkErZ82HDXgh4jSRpT72OrX31wyg8DA1q8+0HvENRfJAyhT/4qT5yH/vVqFfw==
   dependencies:
-    "@redux-saga/core" "^1.0.0"
+    "@redux-saga/core" "^1.0.2"
 
 "redux@>=0.10 <5", redux@^4.0.0:
   version "4.0.1"
